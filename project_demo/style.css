@@ -1,0 +1,94 @@
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .progress-bar {
+            transition: width 0.5s ease-in-out;
+        }
+        .badge-glow {
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+        }
+        .dark {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            
+        }
+        .dark .bg-white {
+            background-color: #2d2d2d !important;
+        }
+        .dark .text-gray-800 {
+            color: #ffffff !important;
+        }
+        .dark .text-gray-600 {
+            color: #d1d5db !important;
+        }
+        .dark .border-gray-200 {
+            border-color: #4b5563 !important;
+        }
+            /* chatbot Style  */
+       
+    .chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 400px;
+      height: 500px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+      display: none; /* Hidden by default */
+      flex-direction: column;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    /* Chatbot header */
+    .chatbot-header {
+      background: white;
+      color: black;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .chatbot-header button {
+      background: transparent;
+      border: none;
+      color: black;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* Chatbot iframe */
+ .chatbot iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Floating chat button */
+    .chat-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: none;
+      background: #0078ff;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+      z-index: 50;
+    }
+   
+    

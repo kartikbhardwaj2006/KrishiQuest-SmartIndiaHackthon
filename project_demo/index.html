@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KrishiQuest - Sustainable Farming Platform</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body class="bg-gray-50">
+    <div id="root"></div>
+    
+    <!-- Chatbot code  -->
+    <button class="chat-toggle animate__animated animate__shakeY animate__infinite" onclick="openChat()"><img src="image1.jpg" alt="Click Here"></button>
+
+    
+    <div class="chatbot" id="chatbot">
+        <div class="chatbot-header">
+            <span>Chatbot</span>
+            <button onclick="closeChat()">X</button>
+        </div>
+
+        <iframe src="https://krishiquestchatbot.netlify.app/" title="Chatbot"></iframe>
+    </div>
+
+    <script>
+        const chatbot = document.getElementById("chatbot");
+        const toggleBtn = document.querySelector(".chat-toggle");
+
+        function openChat() {
+            chatbot.style.display = "flex";
+            toggleBtn.style.display = "none"; // hide floating button
+        }
+
+        function closeChat() {
+            chatbot.style.display = "none";
+            toggleBtn.style.display = "block"; // show floating button again
+        }
+    </script>
+
+    <script src="script.js" type="text/babel"></script>
+</body>
+</html>
