@@ -25,7 +25,7 @@ npm install
 npm run dev
 
 4️⃣ Open in browser
-http://localhost:5173
+https://krishiquest.netlify.app/
 
 
 Or directly explore the deployed apps:
